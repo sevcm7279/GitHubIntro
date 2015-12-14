@@ -1,5 +1,4 @@
 
-
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -35,41 +34,56 @@ public class A8Q1 extends JComponent{
         g.clearRect(0, 0, WIDTH, HEIGHT);
         
         // GAME DRAWING GOES HERE
-        g.setColor(Color.BLACK);
-        g.fillRect(0, 0, 800, 600);
+        Color skyBlue = new Color (28, 198, 255);
+        g.setColor(skyBlue);
+        g.fillRect (0, 0, 800, 600);
         
         //hair
-        Color redHead = new Color (125, 23, 0);
-        g.setColor(redHead);
-        g.fillOval(100, 0, 600, 600);
+        Color teal = new Color (18, 111, 117);
+        g.setColor(teal);
+        g.fillOval(150, 150, 200, 200);
+        g.fillOval(450, 150, 200, 200);
+        g.fillOval(100, 150, 100, 100);
+        g.fillOval(600, 150, 100, 100);
         
         
         //head
-        Color skin = new Color (242, 211, 201);
-        g.setColor(skin);
-        g.fillOval(200, 100, 400, 450);
+        g.setColor(Color.WHITE);
+        g. fillOval (275, 35, 250, 250);
+        g.fillRect(275, 150, 250, 250);
+        Color stuble = new Color (245, 208, 171);
+        g.setColor(stuble);
+        g.fillOval(275, 260, 250, 250);
         
-        g.fillRect(300, 500, 200, 100);
+        //ears
+        g.setColor(Color.WHITE);
+        g.fillOval(235, 250, 60, 60);
+        g.fillOval(505, 250, 60, 60);
+        
+        //nose
+        g.setColor(Color.RED);
+        g.fillOval(350, 250, 100, 75);
         
         //bangs
-        g.setColor(redHead);
-        g.fillOval(200, 50, 400, 200);
+        g.setColor(teal);
+        g.fillOval(350, 10, 100, 100);
         
-        
-        
-        //eyelashes
+        //eyes
+        //outline
         g.setColor(Color.BLACK);
-        g.fillOval(250, 268, 100, 50);
-        g.fillOval(450, 268, 100, 50);
-        
+        g.fillOval(300, 155, 100, 100);
+        g.fillOval(400, 155, 100, 100);
         //eyeballs
-        g.setColor(Color.white);
-        g.fillOval(250, 270, 100, 50);
-        g.fillOval(450, 270, 100, 50);
+        g.setColor(Color.WHITE);
+        g.fillOval(305, 157, 90, 95);
+        g.fillOval(405, 157, 90, 95);
+        //pupils
+        g.setColor(Color.BLACK);
+        g.fillOval(350, 200, 20, 20);
+        g.fillOval(450, 200, 20, 20);
         
-        
-        
-        
+        //mouth
+        g.drawArc(250, 400, 280, 100, 30, 100);
         
         
         
